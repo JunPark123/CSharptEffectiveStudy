@@ -1,0 +1,15 @@
+﻿################################################################################
+# 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
+################################################################################
+
+/Chapter2_Item14/.vs/Chapter2_Item14
+/Chapter2_Item14/bin/Debug/net8.0
+/Chapter2_Item14/obj
+/Chapter2_Item15/bin/Debug/net8.0
+/Chapter2_Item15/obj
+/Chapter2_Item16/bin/Debug/net8.0
+/Chapter2_Item16/obj
+/Chapter2_Item17/bin/Debug/net8.0
+/Chapter2_Item17/obj
+/Chapter2_Item18/bin/Debug/net8.0
+/Chapter2_Item18/obj
