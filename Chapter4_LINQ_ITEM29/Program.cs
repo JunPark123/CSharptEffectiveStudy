@@ -6,6 +6,13 @@ namespace Chapter4_LINQ_ITEM29
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("SelectMany연습입니다");
+            cSelectMany.SelectManyPractic();
+
+            Console.WriteLine("즉시평가, 지연평가 비교 예제코드입니다.");
+            cEvaluation.LazyEvaluation();
+
+            Console.WriteLine("이터레이터 연습입니다");
             foreach (var item in GetAlpabet())
             {
                 Console.WriteLine(item);
@@ -13,6 +20,8 @@ namespace Chapter4_LINQ_ITEM29
 
             var foo = (from n in Enumerable.Range(0, 100) select n * n).ToArray();
             foo.ForAll(x => Console.WriteLine(x));
+
+
         }
 
         public static IEnumerable<char> GetAlpabet()
