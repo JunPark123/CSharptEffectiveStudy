@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using System.Diagnostics.Metrics;
+using System.Net.Sockets;
 
 namespace Chapter4_LINQ_ITEM29
 {
@@ -6,6 +7,9 @@ namespace Chapter4_LINQ_ITEM29
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("클로저 연습입니다.");
+            cClosure_Item41.ClosureSampleAboutBadEx();
+
             Console.WriteLine("SelectMany연습입니다");
             cSelectMany.SelectManyPractic();
 
@@ -137,6 +141,14 @@ namespace Chapter4_LINQ_ITEM29
             foreach (T item in source)
             {
                 action(item);
+            }
+        }
+
+        public static IEnumerable<T> Generate<T>(int count,Func<T> getnerator)
+        {
+            for(int i =0; i< count; i++)
+            {
+                yield return getnerator();
             }
         }
     }
